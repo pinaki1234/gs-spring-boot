@@ -10,6 +10,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      echo '$(system.defaultWorkingDirectory)'
 - task: Maven@3
   inputs:
     mavenPomFile: '$(system.defaultWorkingDirectory)/**/pom.xml'
