@@ -19,7 +19,7 @@ steps:
       echo '$(system.defaultWorkingDirectory)/complete/'
 - task: Maven@3
   inputs:
-    mavenPomFile: '$(system.defaultWorkingDirectory)/**/pom.xml'
+    mavenPomFile: '$(system.defaultWorkingDirectory)/complete/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
