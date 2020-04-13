@@ -15,7 +15,7 @@ steps:
     targetType: 'inline'
     script: |
       # Write your commands here
-      
+      echo 'To print the path'
       echo ls
 - task: Maven@3
   inputs:
