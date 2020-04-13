@@ -16,7 +16,7 @@ steps:
     script: |
       # Write your commands here
       echo 'To print the path'
-      echo '$(system.defaultWorkingDirectory)/**'
+      echo '$(system.defaultWorkingDirectory)/complete/'
 - task: Maven@3
   inputs:
     mavenPomFile: '$(system.defaultWorkingDirectory)/**/pom.xml'
